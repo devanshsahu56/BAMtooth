@@ -1,0 +1,225 @@
+@font-face {
+    font-family: gilroy;
+    src: url(./fonts/Gilroy-Light.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative; 
+    overflow-x: hidden;
+}
+#nav{
+    font-family: gilroy;
+    background-color: white;
+    height: 12vh;
+    width: 100vw;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+}
+#option{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+#option a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+#logo{
+    position: relative;
+    left: -5%;
+    height: 100%;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+#logo>img{
+    margin-top: 15%;
+    width: 100%;
+    object-fit: cover;
+}
+#divl{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+    
+}
+#divl a{
+    text-decoration: none;
+    color: black;
+}
+#divl i{
+    font-size: 25px;
+}
+#nav1{
+    background-color: white;
+    height: 12vh;
+    width: 100vw;
+  
+}
+#page1{
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+#page1 .div{
+    height: 100%;
+    width: 33.333%;
+    overflow: hidden;
+    background-size: cover;
+}
+#tag{
+    position: relative;
+    top: 55%;
+    left: 10%;
+    font-family: gilroy;
+    color: white;
+}
+#ONE{
+    background-image: url(./images/bam1.webp);
+
+}    
+#TWO{
+    background-image: url(./images/bam2.webp);
+}
+#THREE{
+    background-image: url(./images/bam3.webp);
+}
+#tag h1{
+    position: relative;
+    font-weight: 500;
+    text-shadow: black 15px 10px 15px;
+    text-transform: capitalize;
+    z-index: 2;
+    font-size: 70px;
+}
+#tag h4{
+    font-weight: 500;
+    text-shadow: black 20px 10px 10px;
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+#tag a{
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+    
+}
+#dets{
+    margin-top: 1px;
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#dets h1{
+   font-size: 40px;
+   font-family: gilroy;
+   font-weight: 500;
+}
+#dets p{
+    font-family: gilroy;
+    margin-top: 15px;
+    text-align: center;
+    width: 50%;
+    font-size: 15px;
+}
+#page2{
+    height: 170vh;
+    width: 100%;
+    position: relative;
+}
+#page2 #head{
+    height: 10%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items:last baseline ;
+    justify-content: center;
+    position: relative;
+    
+}
+#head h1{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: gilroy;
+    font-weight: 500;
+    margin-bottom: 20px;
+    
+}
+#crds{
+    position: relative;
+    height: 90%;
+    padding: 25px 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 4vw;
+
+}
+.card{
+    height: 65vh;
+    width: 20vw;
+    position: relative;
+
+}
+#top{
+    height: 85%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#top img{
+    width: 100%;
+    object-fit: cover;
+    transition: all ease-in-out .3s;
+}
+.card:nth-last-child(1) #top img{
+    height: 100%;
+    object-fit: cover;
+}
+#bottom{
+    height: 15%;
+    width: 100%;
+    padding: 15px 0;
+    font-family: gilroy;
+}
+#bottom h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#bottom h4{
+    font-size: 15px;
+}
+.card:hover img{
+    scale: 1.07;
+} 
